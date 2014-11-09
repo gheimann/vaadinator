@@ -152,6 +152,27 @@ You can also start customizing the domain model classes and check out the result
 
 ## How 2 move on? - fill me in on the details!
 
+### Get the VaadinatorExample running using eclipse
+
+go to project directory
+
+open eclipse with workspace vaadinator
+
+check installed jre (Preferences -> installed JRE 
+a jdk is needed <img src="img/eclipseJdk.png" border="0" />
+
+on commadn prompt 
+
+cd vaadinator
+
+mvn eclipse:eclipse (it works, if mvn install in step1 was executed)
+
+go to project in VaadinatorExample and call for each mvn eclipse:eclipse 
+
+go to eclipse with the workspace selected before
+
+right mouse in Project Explorer -> import -> alle project are selected
+
 ### Using an external data source
 
 Beyond initial testing, it will make sense to configure a data source for the sake of stability and performance. Here is how you can do that for the project you generated with Vaadinator (and also for the examples coming with Vaadinator):
