@@ -157,11 +157,12 @@ You can also start customizing the domain model classes and check out the result
 open eclipse with workspace vaadinator
 
 check installed jre (Preferences -> installed JRE 
-a jdk is needed <img src="img/eclipseJdk.png" border="0" />
+a jdk is needed: <img src="img/eclipseJdk.PNG" border="0" />
 
 on command prompt, go to project directory (cd vaadinator)
-
+```
 execute mvn eclipse:eclipse (it works, if mvn install in step1 was executed)
+```
 
 go to the subprojects of VaadinatorExample, for each execute mvn eclipse:eclipse 
 
@@ -169,8 +170,9 @@ in eclipse with the workspace selected before
 
 right mouse in Project Explorer -> import -> Existing Projects into Workspace -> choose vaadinator 
 
-import all selected projects
-<img src="img/import_project.png" border="0" />
+import all selected projects:
+
+<img src="img/import_project.PNG" border="0" />
 
 
 ### Using an external data source
@@ -673,13 +675,14 @@ Außerdem ist es wie gesagt möglich, die Domänen-Klassen zu ändern und die Re
 Öffnen Eclipse mit dem Workspace vaadinator
 
 Prüfen, ob als Installed jre ein JDK angegeben ist: (Preferences -> installed JRE) 
- <img src="img/eclipseJdk.png" border="0" />
+ <img src="img/eclipseJdk.PNG" border="0" />
 
 Öffnen des Command Prompt 
 
 Wechsel ins Projekt (cd vaadinator)
-
+```
 ausführen des Maven Command: mvn eclipse:eclipse (funktioniert nur, wenn im ersten Schritt mvn install ausgeführt wurde)
+```
 
 Wechsel in die Example-Projekte innerhalb von VaadinatorExample 
 
@@ -688,7 +691,7 @@ Für jede Example Projekt den Command mvn eclipse:eclipse ausführen
 In Eclipse mit dem vaadinator Workspace im Project Explorer -> rechte Mouse -> import -> Existing Projects into Workspace -> Auswahl vaadinator
 
 Alle vorselektieren Projekte importieren.
-<img src="img/import_project.png" border="0" />
+<img src="img/import_project.PNG" border="0" />
 
 ### Einrichten einer externen Data Source
 
