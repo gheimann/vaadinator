@@ -152,26 +152,26 @@ You can also start customizing the domain model classes and check out the result
 
 ## How 2 move on? - fill me in on the details!
 
-### Get the VaadinatorExample running using eclipse
-
-go to project directory
+### Start working with vaadinator and eclipse (without m2eclipse)
 
 open eclipse with workspace vaadinator
 
 check installed jre (Preferences -> installed JRE 
 a jdk is needed <img src="img/eclipseJdk.png" border="0" />
 
-on commadn prompt 
+on command prompt, go to project directory (cd vaadinator)
 
-cd vaadinator
+execute mvn eclipse:eclipse (it works, if mvn install in step1 was executed)
 
-mvn eclipse:eclipse (it works, if mvn install in step1 was executed)
+go to the subprojects of VaadinatorExample, for each execute mvn eclipse:eclipse 
 
-go to project in VaadinatorExample and call for each mvn eclipse:eclipse 
+in eclipse with the workspace selected before
 
-go to eclipse with the workspace selected before
+right mouse in Project Explorer -> import -> Existing Projects into Workspace -> choose vaadinator 
 
-right mouse in Project Explorer -> import -> alle project are selected
+import all selected projects
+<img src="img/import_project.png" border="0" />
+
 
 ### Using an external data source
 
@@ -667,6 +667,28 @@ Bitte beachten Sie, dass die TouchKit-Elemente auf tatsächlichen Smartphones um
 Außerdem ist es wie gesagt möglich, die Domänen-Klassen zu ändern und die Resultate auszuprobieren.
 
 ## Wie geht es weiter? Was sind die Details?
+
+### Arbeiten mit Vaadinator mit Eclipse ohne Verwendung von m2eclipse
+
+Öffnen Eclipse mit dem Workspace vaadinator
+
+Prüfen, ob als Installed jre ein JDK angegeben ist: (Preferences -> installed JRE) 
+ <img src="img/eclipseJdk.png" border="0" />
+
+Öffnen des Command Prompt 
+
+Wechsel ins Projekt (cd vaadinator)
+
+ausführen des Maven Command: mvn eclipse:eclipse (funktioniert nur, wenn im ersten Schritt mvn install ausgeführt wurde)
+
+Wechsel in die Example-Projekte innerhalb von VaadinatorExample 
+
+Für jede Example Projekt den Command mvn eclipse:eclipse ausführen 
+
+In Eclipse mit dem vaadinator Workspace im Project Explorer -> rechte Mouse -> import -> Existing Projects into Workspace -> Auswahl vaadinator
+
+Alle vorselektieren Projekte importieren.
+<img src="img/import_project.png" border="0" />
 
 ### Einrichten einer externen Data Source
 
